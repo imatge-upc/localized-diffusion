@@ -36,25 +36,8 @@ This framework allows localized editing while maintaining coherence in the untou
 
 ![image](./assets/Figures/overview.png)
 
-# 🔧 Dependencies and Installation
-
-- Python >= 3.10 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
-- [PyTorch >= 2.0.1](https://pytorch.org/)
-```bash
-pip install -r requirements.txt
-```
-
-# 🔥 How to Train
-In order to train T2I-Adapter, you need to run the script `train_adapter.py` with the arguments you want. For example, to train the model with the default parameters, you can run the following command:
-```bash
-python train_adapter.py 
-```
-This will use the default configuration in config folder.
-
-Training was conducted on a single NVIDIA A10G Tensor Core GPU with 24GB of memory.
-We employed the Adam optimizer with weight decay Loshchilov and Hutter (2019) set to 1×10−2, a learning rate of 8×10−5 and a λ value of 1×10−3. Models were trained with a batch size of 4 and gradient accumulation of 2, effectively simulating a batch size of 8. Training spanned up to 10 epochs with early stopping based on FID scores, evaluated every 10k steps. However, all models converged within a single epoch as FID scores ceased improving. We attribute this rapid convergence to the compact size of the T2I-Adapter and the use of a pre-trained U-Net.
-
-Scripts and Notebooks for evaluation and visualization are located in the `nbs` folder, while the scripts `evaluate_fid.py` and `evaluate_quantitative_metrics.py` are used to evaluate the model.
+## How to Use
+Code will be uploaded once the paper is published.
 
 
 # 🤗 Acknowledgements
