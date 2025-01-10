@@ -7,7 +7,7 @@
 <div align="center">
   <strong>
     <a href="https://scholar.google.es/citations?user=ZWTpskYAAAAJ&hl=es&oi=ao">Pablo Domingo Gregorio</a> · 
-    <a href="#">Martí Grau Gasulla</a> · 
+    <a href="https://scholar.google.es/citations?hl=es&user=8qPAHhQAAAAJ">Martí Grau Gasulla</a> · 
     <a href="https://scholar.google.es/citations?user=1eAA6ggAAAAJ&hl=es&oi=ao">Javier Ruiz Hidalgo</a>
   </strong>
 </div>
