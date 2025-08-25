@@ -1,0 +1,11 @@
+train_unet: true
+mask_features: false
+input_masked: false
+mask_method: bbox # [class, bbox]
+adapter_weights: 1.0
+prediction_type: epsilon # [epsilon, v_prediction]
+proportion_empty_prompts: 0.5
+validation_empty_prompts: 0.3
+apply_cubic_timestep: true
+pretrained_ckpt_path: null
+base_diffusion_ckpt_path: ??? # Path to the checkpoint of the base diffusion model

@@ -1,0 +1,18 @@
+get_items:
+    _target_: data.pair_dataset.Laion600KDataset.get_dataset_items
+    data_root: ???
+
+source:
+    _target_: data.pair_dataset.Laion600KDataset
+    data_root: ${dataset.get_items.data_root}
+    condition_name: ${model.condition}
+    mask_features: ${model.mask_features}
+
+img_size: 512
+length: 520900
+
+transforms:
+    _target_: data.transforms.Laion600KTransforms
+    work_size: ${dataset.img_size}
+    mean: [0.5, 0.5, 0.5]
+    std: [0.5, 0.5, 0.5]

@@ -1,0 +1,47 @@
+defaults:
+    - _self_
+    - model: adapter_color
+    - dataset: laion_600k
+    - loss: mse
+    - logger: wandb
+
+# Required Arguments
+output_path: ???
+
+# System Arguments
+seed: 42
+device: cuda
+num_workers: 4
+
+# Train Arguments
+batch_size: 8
+num_epochs: 50
+gradient_accumulation_steps: 2
+
+# Validation Arguments
+track_timesteps: false
+track_adapter_statistics: false
+perform_validation: true
+validation_samples: ['387721', '100120', '094499', '154839', '356719', '162689', '089960', '555388', '033550', '081209', '603533', '538392']
+train_partition: 0.801
+validation_batch_size: 1
+perform_step_valcheck: true
+val_step_interval: 5000
+val_epoch_interval: 1
+save_step_interval: 5000
+save_epoch_interval: 1
+stop_after_step: 50000
+
+# Optimizer Arguments
+optimizer: adamw
+learning_rate: 1e-5
+beta1: 0.9
+beta2: 0.999
+weight_decay: 1e-2
+epsilon: 1e-8
+
+# Learning Rate Scheduler Arguments
+lr_scheduler: linear
+scale_lr: true
+num_warmup_steps: 500
+max_grad_norm: 1.0

@@ -1,0 +1,10 @@
+defaults:
+    - adapter
+
+condition: canny
+parameters:
+    adapter_type: full_adapter
+    channels: [320, 640, 1280, 1280]
+    downscale_factor: 8
+    in_channels: 1
+    num_res_blocks: 2

@@ -1,0 +1,14 @@
+get_items:
+    _target_: data.pair_dataset.SceneConditionDataset.get_dataset_items
+    data_root: ???
+
+source:
+    _target_: data.pair_dataset.SceneConditionDataset
+    data_root: ${dataset.get_items.data_root}
+    condition_name: ${model.condition}
+    mask_features: ${model.mask_features}
+    foreground_classes: [23, 30, 39, 57, 97]
+
+transforms:
+    _target_: data.transforms.SceneConditionTransforms
+    work_size: 512

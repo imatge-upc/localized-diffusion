@@ -1,0 +1,12 @@
+function:
+  _target_: losses.losses.PredX0MSELoss
+  weight:
+    simple: 1.0
+    pred_x0: 0.1
+  method: constant
+  method_parameters:
+    constant: null
+    step_unit:
+      lower_bound_t: 500
+      upper_bound_t: 999
+    time_unit: null

@@ -1,0 +1,23 @@
+name: wandb
+project_name: conditional_diffusion
+init_arguments:
+    name: null # The name of the run.
+    id: null # The WandB id to train the same model.
+    tags: null # A list of strings, which will populate the list of tags on this run in the UI.
+    notes: null # Possible notes that could be added to the WANDB experiment
+    group: null #Specify a group to organize individual runs into a larger experiment.
+    job_type: null # Specify the type of run, which is useful when you're grouping runs together into larger experiments using group.
+    dir: null # Path where data related to WandB is saved. It must exist or it saved in temporal directory.
+config_to_push:
+    learning_rate: ${learning_rate}
+    num_epochs: ${num_epochs}
+    batch_size: ${batch_size}
+    gradient_accumulation_steps: ${gradient_accumulation_steps}
+    optimizer:
+        name: ${optimizer}
+        beta1: ${beta1}
+        beta2: ${beta2}
+        weight_decay: ${weight_decay}
+        epsilon: ${epsilon}
+        num_warmup_steps: ${num_warmup_steps}
+        max_grad_norm: ${max_grad_norm}

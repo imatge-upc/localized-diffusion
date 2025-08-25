@@ -1,0 +1,10 @@
+defaults:
+    - adapter
+
+condition: color
+parameters: 
+    adapter_type: light_adapter
+    channels: [320, 640, 1280]
+    downscale_factor: 8
+    in_channels: 3
+    num_res_blocks: 4

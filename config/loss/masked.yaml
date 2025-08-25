@@ -1,0 +1,3 @@
+function:
+  _target_: losses.losses.MaskedMSELoss
+  weight: 1.0
