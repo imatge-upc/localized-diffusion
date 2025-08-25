@@ -36,12 +36,9 @@ This framework allows localized editing while maintaining coherence in the untou
 
 ![image](./assets/Figures/overview.png)
 
-## How to Use
-Code will be uploaded once the paper is published.
-
 
 # 🤗 Acknowledgements
-- Thanks to UPC & Napptilus TechLab for providing the necessary resources to carry out this research..
+- Thanks to UPC & Napptilus TechLab for providing the necessary resources to carry out this research.
 
 # BibTeX
 
